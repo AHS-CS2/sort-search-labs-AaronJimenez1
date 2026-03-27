@@ -1,6 +1,6 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name -
+//Name - Aaron Jimenez
 
 import java.util.Arrays;
 import static java.lang.System.*; 
@@ -16,16 +16,17 @@ public class WordSort
 
 	public void setList(String line)
 	{
-		wordRay = line.split(" ");
+		wordRay = line.split(" ", wordRay.length);
 	}
 
 	public void sort()
 	{
+		Arrays.sort(wordRay);
 	}
 
-	public String toString( )
+	public String toString()
 	{
-		String output="";
+		String output="word " + " :: " + wordRay;
 		return output+"\n\n";
 	}
 }

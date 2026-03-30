@@ -8,10 +8,10 @@ import java.io.File;
 import java.io.IOException;
 import static java.lang.System.*;
 
-public class NumberSearch
-{
-	public static int getNextLargest(int[] numArray, int searchNum)
-	{
+public class NumberSearch {
+	public static int getNextLargest(int[] numArray, int searchNum) {
+
+		// Fill in this method.
 		return -1;
 	}
 }

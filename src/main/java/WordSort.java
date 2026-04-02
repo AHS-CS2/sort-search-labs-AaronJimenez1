@@ -17,7 +17,6 @@ public class WordSort
 	public void setList(String line)
 	{
 		wordRay = line.split(" ");
-		Arrays.sort(wordRay);
 	}
 
 	public void sort()

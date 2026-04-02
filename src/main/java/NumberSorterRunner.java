@@ -17,6 +17,7 @@ public class NumberSorterRunner
 			{
 				System.out.print(item + " ");
 			}
+			
 			System.out.println();
 		}
 	}

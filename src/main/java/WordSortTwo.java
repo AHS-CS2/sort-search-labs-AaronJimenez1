@@ -25,6 +25,12 @@ public class WordSortTwo {
 		Arrays.sort(wordRay);
 	}
 
+	public void setWords(String sentence) 
+	{
+		wordRay = sentence.split(" ");
+		Arrays.sort(wordRay);
+	}
+
 	public String toString() 
 	{
 		String output = "";

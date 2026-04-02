@@ -20,14 +20,14 @@ public class WordSortTwo {
 		Arrays.sort(wordRay);
 	}
 
-	public void sort() 
-	{
-		Arrays.sort(wordRay);
-	}
-
 	public void setWords(String sentence) 
 	{
 		wordRay = sentence.split(" ");
+		Arrays.sort(wordRay);
+	}
+
+	public void sort() 
+	{
 		Arrays.sort(wordRay);
 	}
 
@@ -35,9 +35,9 @@ public class WordSortTwo {
 	{
 		String output = "";
 
-		for (String word : wordRay)
+		for (int i = 0; i < wordRay.length; i++)
 		{
-			output += word + "\n";
+			output += "word " + i + " :: " + wordRay[i] + "\n";
 		}
 		return output;
 	}

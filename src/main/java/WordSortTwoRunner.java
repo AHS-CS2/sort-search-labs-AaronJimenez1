@@ -18,15 +18,10 @@ public class WordSortTwoRunner
 		for(int i = 0; i<size; i++)
 		{
 			String sentence = file.nextLine();
+			WordSortTwo ws = new WordSortTwo(sentence);
+			System.out.println(ws);
 			//instantiate a new WordSort
-
-			WordSoirrTwo sen1 = new WordSortTwo("WHAT TIME IS IT?");
-			WordSoirrTwo sen2 = new WordSortTwo("THE BIG BROWN FOX IS LAZY!");
-			WordSoirrTwo sen3 = new WordSortTwo("I AM SAM SAM I AM SAM IS BIG");
-			WordSoirrTwo sen4 = new WordSortTwo("1234 ONE TWO 5678");
-			WordSoirrTwo sen5 = new WordSortTwo("a b i j 1 2 3");
-
-			System.out.println(sen1);
 		}
+		file.close();
 	}
 }

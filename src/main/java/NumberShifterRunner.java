@@ -16,7 +16,16 @@ public class NumberShifterRunner
 		System.out.println( Arrays.toString( ray ) );
 		NumberShifter.shiftEm( ray );
 		System.out.println( Arrays.toString( ray ) );
-		
+		System.out.println();
+		int[] ray2 = NumberShifter.makeLucky7Array(20);
+		System.out.println( Arrays.toString( ray2 ) );
+		NumberShifter.shiftEm( ray2 );
+		System.out.println( Arrays.toString( ray2 ) );
+		System.out.println();
+		int[] ray3 = NumberShifter.makeLucky7Array(20);
+		System.out.println( Arrays.toString( ray3 ) );
+		NumberShifter.shiftEm( ray3 );
+		System.out.println( Arrays.toString( ray3 ) );
 	}
 }
 

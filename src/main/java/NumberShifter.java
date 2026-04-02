@@ -13,10 +13,28 @@ public class NumberShifter
 	public static int[] makeLucky7Array( int size)
 	{
 		//You will need to use Math.random()
-		return null;
+
+		int[] array = new int[size];
+		
+		for (int i = 0; i < size; i++)
+		{
+			array[i] = (int)(Math.random() * 10) + 1;
+		}
+		return array;
 	}
 	public static void shiftEm(int[] array)
 	{
-		
+		int insertPos = 0;
+
+		for (int i = 0; i < array.length; i++)
+		{
+			if (array[i] == 7)
+			{
+				int seven = array[i];
+				array[i] = array[insertPos];
+				array[insertPos] = seven;
+				insertPos++;
+			}
+		}
 	}
 }

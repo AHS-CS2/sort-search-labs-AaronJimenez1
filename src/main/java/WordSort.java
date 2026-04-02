@@ -16,7 +16,8 @@ public class WordSort
 
 	public void setList(String line)
 	{
-		wordRay = line.split(" ", wordRay.length);
+		wordRay = line.split(" ");
+		Arrays.sort(wordRay);
 	}
 
 	public void sort()
@@ -26,7 +27,12 @@ public class WordSort
 
 	public String toString()
 	{
-		String output="word " + " :: " + wordRay;
-		return output+"\n\n";
+		String output = "";
+		
+		for (int i = 0; i < wordRay.length; i++)
+		{
+			output += "word " + i + " :: " + wordRay[i] + "\n";
+		}
+		return output + "\n";
 	}
 }

@@ -16,7 +16,8 @@ public class WordSortTwo {
 
 	public void setWords(String sentence) 
 	{
-		wordRay = sentence.split(sentence);
+		wordRay = sentence.split(" ");
+		Arrays.sort(wordRay);
 	}
 
 	public void sort() 
@@ -27,6 +28,11 @@ public class WordSortTwo {
 	public String toString() 
 	{
 		String output = "";
-		return output + "\n\n";
+
+		for (String word : wordRay)
+		{
+			output += word + "\n";
+		}
+		return output;
 	}
 }

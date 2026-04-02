@@ -21,7 +21,7 @@ public class WordSort
 
 	public void sort()
 	{
-		Arrays.sort(wordRay);
+		Arrays.sort(wordRay, String.CASE_INSENSITIVE_ORDER);
 	}
 
 	public String toString()

@@ -37,6 +37,6 @@ public class WordSortTwo {
 		{
 			output += word + "\n";
 		}
-		return output;
+		return output + "\n\n";
 	}
 }

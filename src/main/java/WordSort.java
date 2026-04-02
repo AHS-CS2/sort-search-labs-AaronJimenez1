@@ -12,7 +12,6 @@ public class WordSort
 	public WordSort(String line)
 	{
 	   setList(line);
-	   sort();
 	}
 
 	public void setList(String line)
@@ -34,6 +33,6 @@ public class WordSort
 		{
 			output += "word " + i + " :: " + wordRay[i] + "\n";
 		}
-		return output + "\n";
+		return output + "\n\n";
 	}
 }

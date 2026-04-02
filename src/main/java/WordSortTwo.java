@@ -33,9 +33,9 @@ public class WordSortTwo {
 	{
 		String output = "";
 
-		for (int i = 0; i < wordRay.length; i++)
+		for (String word : wordRay)
 		{
-			output += "word " + i + " :: " + wordRay[i] + "\n";
+			output += word + "\n";
 		}
 		return output;
 	}

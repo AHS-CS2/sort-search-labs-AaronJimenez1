@@ -12,11 +12,13 @@ public class WordSort
 	public WordSort(String line)
 	{
 	   setList(line);
+	   sort();
 	}
 
 	public void setList(String line)
 	{
 		wordRay = line.split(" ");
+		sort();
 	}
 
 	public void sort()

@@ -14,7 +14,7 @@ public class WordSortTwo {
 		setList(sentence);
 	}
 
-	public void setWords(String sentence) 
+	public void setList(String sentence) 
 	{
 		wordRay = sentence.split(" ");
 		Arrays.sort(wordRay);

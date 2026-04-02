@@ -12,6 +12,7 @@ public class WordSortTwo {
 	public WordSortTwo(String sentence) 
 	{
 		setList(sentence);
+		sort();
 	}
 
 	public void setList(String sentence) 

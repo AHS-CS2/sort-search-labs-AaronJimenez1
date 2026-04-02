@@ -12,19 +12,16 @@ public class WordSortTwo {
 	public WordSortTwo(String sentence) 
 	{
 		setList(sentence);
-		sort();
 	}
 
 	public void setList(String sentence) 
 	{
 		wordRay = sentence.split(" ");
-		Arrays.sort(wordRay);
 	}
 
 	public void setWords(String sentence) 
 	{
 		wordRay = sentence.split(" ");
-		Arrays.sort(wordRay);
 	}
 
 	public void sort() 
